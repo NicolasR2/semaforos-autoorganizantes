@@ -2,14 +2,14 @@
 
 Simulación comparativa de dos estrategias de control de tráfico: semáforos con ciclos fijos (clásicos) vs semáforos que se adaptan a la demanda real en tiempo local (autoorganizantes, basado en Gershenson 2005).
 
-## 📋 Descripción
+##  Descripción
 
 Este proyecto simula una red de **4 intersecciones (cuadrícula 2×2)** bajo diferentes escenarios de tráfico, comparando:
 
 - **Semáforo Clásico:** Fases de duración fija, sin importar la demanda actual
 - **Semáforo Autoorganizante:** Fases adaptativas usando solo información local (propuesta de Gershenson 2005)
 
-## 🎯 Experimentos
+##  Experimentos
 
 El notebook contiene 5 experimentos diseñados para explorar cuándo y por qué la diferencia importa:
 
@@ -38,7 +38,7 @@ Además incluye:
 pip install numpy matplotlib jupyter
 ```
 
-## 🚀 Cómo usar
+##  Cómo usar
 
 1. Abrir el notebook en Jupyter:
 ```bash
@@ -51,12 +51,12 @@ jupyter notebook simulacion_semaforos.ipynb
    - Celdas 17-18: Resumen visual y animación interactiva
    - Celda 19: Conclusiones
 
-## 📚 Referencias
+##  Referencias
 
 - **Gershenson, C. (2005).** *Self-Organizing Traffic Lights.* arXiv:nlin/0411066
 - **Gershenson, C. & Rosenblueth, D. A. (2009).** *Modeling self-organizing traffic lights with elementary cellular automata.* arXiv:0907.1925
 
-## 🔑 Conceptos principales
+##  Conceptos principales
 
 ### Reglas de Gershenson para semáforos autoorganizantes:
 
@@ -71,7 +71,7 @@ jupyter notebook simulacion_semaforos.ipynb
 - `min_green`, `max_green`: Ventana de tiempo adaptativo para autoorganizante
 - `n_thresh`: Umbral de solicitud de cambio (número de autos esperando)
 
-## 🎨 Visualización
+##  Visualización
 
 - Cada experimento genera **3 paneles:**
   - Cola total en el tiempo (muestra dinámicas)
@@ -80,14 +80,14 @@ jupyter notebook simulacion_semaforos.ipynb
 
 - **Animación interactiva:** Muestra 4 intersecciones coloreadas (verde=verde, rojo=rojo) con colas en tiempo real
 
-## 📝 Notas de implementación
+##  Notas de implementación
 
 - Simulación discreta por segundo
 - Capacidad de servicio: 1 auto/segundo por intersección
 - Llegadas modeladas como proceso de Poisson
 - Sin comunicación entre intersecciones (solo información local)
 
-## 💡 Conclusión
+##  Conclusión
 
 El semáforo autoorganizante logra mejores resultados **sin necesidad de coordinación central**, usando solo información local. Esto lo hace:
 - **Fácil de implementar:** cada semáforo decide independientemente
