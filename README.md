@@ -25,14 +25,14 @@ Además incluye:
 - **Demo visual animada:** Animación interactiva HTML mostrando ambos sistemas en paralelo
 - **Resumen comparativo:** Gráficas de reducción de espera entre todos los escenarios
 
-## 📊 Resultados clave
+##  Resultados clave
 
 - **Tráfico asimétrico:** El autoorganizante reduce la espera ~25-35%
 - **Tráfico simétrico:** Reducción ~5-10% (ventaja menor pero consistente)
 - **Ciclo óptimo:** Incluso el mejor `classic_t` no supera al autoorganizante
 - **Largo plazo:** La ventaja es estable (no converge ni diverge)
 
-## 🛠️ Requisitos
+##  Requisitos
 
 ```bash
 pip install numpy matplotlib jupyter
